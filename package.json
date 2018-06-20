@@ -1,0 +1,22 @@
+{
+  "name": "Kronotex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run sass:run && concurrently \"npm run sass:watch\" \"npm run serve\"",
+    "serve": "lite-server",
+    "sass:run": "node-sass scss -o css --output-style expanded --source-map-embed",
+    "sass:watch": "node-sass scss -o css -w  --output-style expanded --source-map-embed",
+    "build": "node-sass scss -o css  --output-style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.9.0"
+  },
+  "dependencies": {},
+  "description": ""
+}

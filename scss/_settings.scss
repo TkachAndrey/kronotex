@@ -1,0 +1,71 @@
+
+//colors
+$black: #000000;
+$white: #ffffff;
+$hoverColor: #ef5350;
+$buttonColor: #ef5d5a;
+$redFontColor: #ff4d4c;
+$mainColor: #455a64;
+$additionalColor: #263238;
+$yellow: #fdde7e;
+$lightYellow: #ffcc00;
+$mainColor: #333333;
+$headerColor: #666666;
+$grey: #cccccc;
+$headerSlogan: #898f8f;
+$borderColor: #90a4ae;
+$bgColor: #eceff1;
+$brown: #3e2723;
+$inputBorderColor: rgba(62, 39, 35, .5);
+$darkGreyColor: #37474f;
+$advColor: #455a64;
+$planImgColor: #222d33;
+$footerTextColor: #b0bec5;
+$logInColor: #202a2e;
+$searchIconColor: #311e1b;
+$formIcon: #232d32;
+$formInputBorderColor: #ef9a9a;
+
+
+html {
+  font-size: $baseFontSize;
+}
+
+body {
+  font-size: rem(16px);
+  font-family: $fontFamily;
+  background-color: $bgColor;
+  color: $mainColor;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper{
+	width: $maxW;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.relative{
+	position: relative;
+}
+
+.uppCase{
+	text-transform: uppercase;
+}
+
+.redColor{
+	color: $redFontColor;
+}
+
+@mixin flex(){
+	display: flex;
+	flex-wrap: wrap;
+}
